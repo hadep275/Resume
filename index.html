@@ -73,6 +73,31 @@
             .contact-info a:hover {
             text-decoration: underline;
             }
+            .download-link {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .download-link span {
+        display: none;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .download-link:hover span {
+        display: block;
+        opacity: 1;
+    }
         </style>
     </head>
     <body>
@@ -86,8 +111,8 @@
             <li><a href="https://www.linkedin.com/in/hikmaha/" target="_blank"><span style="font-family: Garamond;">LinkedIn</span></a></li>
             <li><a href="https://hadep275.github.io/PortfolioProject/" target="_blank"><span style="font-family: Garamond;">Portfolio</span></a></li>
             <li><a href="https://github.com/hadep275" target="_blank"><span style="font-family: Garamond;">GitHub</span></a></li>
-                    <a href="https://github.com/hadep275/Resume/raw/main/path-to-your-resume.pdf" download="Hikmah_Adepoju_Resume.pdf">
-                    <img src="download-solid.svg" alt="Download Icon"> Download Resume
+                    <a href="https://github.com/hadep275/Resume/raw/main/path-to-your-resume.pdf" download="Hikmah_Adepoju_Resume.pdf" class="download-link">
+                    <img src="download-solid.svg" alt="Download Icon"> <span>Download Resume</span>
                     </a>
             <section class="section">
             </section>
