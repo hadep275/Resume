@@ -122,14 +122,14 @@
                 var element = document.getElementById('resume-section'); 
                     var pdfOptions = {
                     margin: 10,
-                    // filename: 'Hikmah_Adepoju_Resume.pdf',
-                    // image: { type: 'jpeg', quality: 0.98 },
+                    filename: 'Hikmah_Adepoju_Resume.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
                     html2canvas: { scale: 2 },
                     jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
                     // jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait', putOnlyUsedFonts: true, compressPDF: true, width: 210, height: 297 }
                 };
-
-                    html2pdf().from(element).set(pdfOptions).outputPdf();
+                    html2pdf().set(pdfOptions).from(element).save();
+                    // html2pdf().from(element).set(pdfOptions).outputPdf();
                     // html2pdf(element);
                     }
                 </script>
