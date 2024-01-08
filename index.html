@@ -128,8 +128,9 @@
                     jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait', putOnlyUsedFonts: true, compressPDF: true, width: 210, height: 297 },
                     // jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait', putOnlyUsedFonts: true, compressPDF: true, width: 210, height: 297 }
                 };
-                    // html2pdf().set(pdfOptions).from(element).save();
-                    html2pdf().from(element).set(pdfOptions).outputPdf();
+                    html2pdf().set(pdfOptions).from(element).save();
+                    html2pdf(element).set(pdfOptions).save();
+                    // html2pdf().from(element).set(pdfOptions).outputPdf();
                     // html2pdf(element);
                     }
                 </script>
